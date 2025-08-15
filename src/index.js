@@ -118,5 +118,9 @@ class WordleBot {
     }
 }
 
-const bot = new WordleBot();
-bot.play();
+if (require.main === module) {
+    const bot = new WordleBot();
+    bot.play();
+}
+
+module.exports = WordleBot;
